@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@/const/*": ["src/const/*"],
-      "@/data/*": ["src/data/*"],
-      "@/mocks/*": ["src/mocks/*"],
-      "@/helpers/*": ["src/helpers/*"],
-      "@/components/*": ["src/components/*"]
+      "~/*": ["src/*"],
+      "~/images": ["src/assets/images/*"],
+      "~/templates/*": ["src/components/templates/*"],
+      "~/organisms/*": ["src/components/organisms/*"],
+      "~/molecules/*": ["src/components/molecules/*"],
+      "~/atoms/*": ["src/components/atoms/*"],
+      "~/sections/*": ["src/sections/*"]
     }
   }
 }
