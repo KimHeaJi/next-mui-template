@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
 import styles from './Dashboard.module.css';
 
-export interface IDashboard {}
+export interface IDashboardProps {}
 
-export const Dashboard: IDashboard = () => {
+const Dashboard = (props: IDashboardProps) => {
   // useEffect(() => {
   //   (async () => {
   //     const res = await fetch('http://backend-dev/dashboard');
@@ -11,5 +10,7 @@ export const Dashboard: IDashboard = () => {
   //   })();
   // }, []);
 
-  return <div>dashboard</div>;
+  return <div>Dashboard</div>;
 };
+
+export default Dashboard;
