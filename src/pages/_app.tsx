@@ -2,11 +2,10 @@ import '../../styles/globals.css';
 
 import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
-import { ThemeProvider } from 'styled-components';
 
-import { theme } from '../../styles/theme';
 import { PHASE } from '~/const/system';
 import initMockAPI from '~/mocks';
+import { CustomThemeProvider } from '~/theme';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,9 +26,9 @@ const App = ({ Component, pageProps }: AppProps) => {
   if (isLoading) return <div>loading...</div>;
 
   return (
-    <ThemeProvider theme={theme}>
+    <CustomThemeProvider>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </CustomThemeProvider>
   );
 };
 

@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "source": "/",
+    "destination": "/dashboard",
+    "permanent": false
+  }
+]
