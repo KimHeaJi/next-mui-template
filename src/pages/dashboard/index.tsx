@@ -1,5 +1,8 @@
 import styles from './Dashboard.module.css';
 
+import Card from '~/components/common/card/Card';
+import { Grid } from '@mui/material';
+
 export interface IDashboardProps {}
 
 const Dashboard = (props: IDashboardProps) => {
@@ -10,7 +13,37 @@ const Dashboard = (props: IDashboardProps) => {
   //   })();
   // }, []);
 
-  return <div>Dashboard</div>;
+  return (
+    <Grid container spacing={3}>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Card />
+      </Grid>
+    </Grid>
+  );
 };
 
 export default Dashboard;
